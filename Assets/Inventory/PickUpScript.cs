@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+
 
 public class PickUpScript : MonoBehaviour {
 
@@ -25,7 +27,9 @@ public class PickUpScript : MonoBehaviour {
             if (!isSlotOccupied[i])
             {
                 isSlotOccupied[i] = true;
-                items[i].GetComponent<SpriteRenderer>().sprite = itemImages[int.Parse(gObject.name)]; // будет равно gameObject name toInt32
+                items[i].GetComponent<Image>().sprite = itemImages[int.Parse(gObject.name)];
+                items[i].GetComponent<Image>().enabled = true;
+                //items[i].GetComponent<ImageN>().GetComponent<Item>().amount++;
                 break;
             }
         }

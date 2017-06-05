@@ -46,9 +46,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Inventory\Helper.cs" />
+     <Compile Include="Assets\Inventory\Inventory.cs" />
      <Compile Include="Assets\Inventory\InventoryController.cs" />
+     <Compile Include="Assets\Inventory\ItemDatabase.cs" />
      <Compile Include="Assets\Inventory\PickUpScript.cs" />
+     <Compile Include="Assets\SlotContoller.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />

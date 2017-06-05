@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class InventoryController : MonoBehaviour {
 
@@ -71,10 +72,10 @@ public class InventoryController : MonoBehaviour {
     {
         foreach (GameObject cell in cells)
         {
-            cell.GetComponent<SpriteRenderer>().color = Color.white;
+            cell.GetComponent<Image>().color = Color.white;
         }
 
-        cells[number].GetComponent<SpriteRenderer>().color = Color.blue;
+        cells[number].GetComponent<Image>().color = Color.blue;
 
     }
 
